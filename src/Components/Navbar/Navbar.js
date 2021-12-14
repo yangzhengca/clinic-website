@@ -1,12 +1,13 @@
 import React from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import styles from "./Navbar.module.css";
 import logo from "../../images/clinic.png";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-primary ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <img class={styles.logo} src={logo} />
         </a>
         <button
@@ -22,18 +23,18 @@ const Navbar = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto fs-3">
-            <a class="nav-link active" aria-current="page" href="#">
+            <Link smooth  to="#top" class="nav-link active" aria-current="page">
               Home
-            </a>
-            <a class="nav-link" href="#">
+            </Link>
+            <Link smooth class="nav-link" to="#about">
               About
-            </a>
-            <a class="nav-link" href="#">
+            </Link>
+            <Link smooth class="nav-link" to="#service">
               Service
-            </a>
-            <a class="nav-link" href="#">
+            </Link>
+            <Link smooth class="nav-link" to="#contact">
               Contact
-            </a>
+            </Link>
             <div class="d-grid gap-2 col-3 mx-auto">
               <a class="btn btn-small btn-success fs-5 text-wrap" href="#">
                 Make An Appointment

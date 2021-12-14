@@ -5,8 +5,9 @@ import styles from "./About.module.css"
 
 const About = () => {
   return (
-    <div class="container">
-      <div class="row">
+    <section id="about" >
+    <div class="container p-5">
+      <div class="row p-5">
         <div class="col-6">
             <h1>Dr. Who</h1>
             <p>
@@ -21,6 +22,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
