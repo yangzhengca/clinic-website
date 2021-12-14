@@ -1,13 +1,30 @@
 body {
   margin: 0;
-  font-family: 'BenchNine','Roboto','Segoe UI', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: 'BenchNine',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+li {
+  list-style: none;
+
+}
+
+.navbar-collapse>ul>li>a {
+  font-size: 22px;
+  color: #737373;
+  text-transform: uppercase;
+  transition: all .7s ease 0s;
+  -webkit-transition: all .7s ease 0s;
+  -moz-transition: all .7s ease 0s;
+  -o-transition: all .7s ease 0s;
+  -ms-transition: all .7s ease 0s;
+  padding: 14px 15px;
+  /* font-weight: bold; */
 }
