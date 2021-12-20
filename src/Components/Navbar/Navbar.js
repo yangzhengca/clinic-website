@@ -11,7 +11,9 @@ const Navbar = () => {
           {/* <a class="navbar-brand" href="/">
             <img style={{maxWidth: "10%"}} src={logo} alt="logo" />
           </a> */}
-          <a class="navbar-brand fs-2" href="#">The Clinic</a>
+          <a class="navbar-brand fs-2" href="#">
+            The Clinic
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -41,15 +43,24 @@ const Navbar = () => {
                 </a>
               </li>
 
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <a href="#contact" class="nav-link">
                   Contact
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="/" class="nav-link">
+              </li> */}
+              <li class="nav-item appointment-btn btn-outline">
+                <a
+                  target="_top"
+                  class="nav-link"
+                  href="https://squareup.com/appointments/book/9zcg02zd6if7v6/LJPXV0AAC92MW/start"
+                  rel="nofollow"
+                >
                   Appointment
                 </a>
+
+                {/* <a href="/" class="nav-link">
+                  Appointment
+                </a> */}
               </li>
             </ul>
           </div>

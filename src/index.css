@@ -28,3 +28,21 @@ li {
   padding: 14px 15px;
   /* font-weight: bold; */
 }
+
+.slide {
+  margin:0;
+  padding:0;
+}
+
+
+
+
+
+
+
+.appointment-btn a:hover {
+  background: #4267b2;
+  color: #ffffff !important;
+  border-radius: 50px;
+}
+

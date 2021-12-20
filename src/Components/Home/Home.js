@@ -7,7 +7,7 @@ import slide2 from "../../images/slide2.jpg";
 const Home = () => {
   return (
     <section id="home">
-      <div class="container mt-5">
+      <div class="mt-3">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"

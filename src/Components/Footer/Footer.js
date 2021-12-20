@@ -1,11 +1,12 @@
 import React from "react";
+import styles from "./Footer.module.css"
 
 const Footer = () => {
   return (
-    <div class="container">
+    <div class="fluid-container">
       <footer class="py-5">
         <div class="row border-top">
-          <div class="col-3 mt-4">
+          <div class="col-md-4 mt-4 text-center">
             <h5>Navigation</h5>
             <ul class="nav flex-column mt-3">
               <li class="nav-item mb-2">
@@ -14,20 +15,19 @@ const Footer = () => {
                 </a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">
+                <a href="#about" class="nav-link p-0 text-muted">
                   About
                 </a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">
+                <a href="#service" class="nav-link p-0 text-muted">
                   Service
                 </a>
               </li>
-              
             </ul>
           </div>
 
-          <div class="col-4 mt-4">
+          <div class="col-md-4 mt-4 text-center">
             <h5>Contact Information</h5>
             <ul class="nav flex-column mt-3">
               <li class="nav-item mb-2">
@@ -45,14 +45,22 @@ const Footer = () => {
                   Address: 1440 14 Ave, Regina, SK S4P 0W5
                 </a>
               </li>
-              
             </ul>
           </div>
 
-
-
-          <div class="col-4 offset-1 mt-4">
-            <form>
+          <div class="col-3 mt-4 d-flex">
+            <div id="google-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8546.527672813305!2d-104.6056587968957!3d50.44300278934134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x531c1e376dcac753%3A0x66c099361407330a!2sRegina%20General%20Hospital!5e0!3m2!1sen!2sca!4v1639505162661!5m2!1sen!2sca"
+                // width="800"
+                // height="600"
+                style={{ border: 0 }}
+                allowfullscreen="true"
+                loading="lazy"
+                id="google-map"
+              ></iframe>
+            </div>
+            {/* <form>
               <h5>Subscribe to our newsletter</h5>
               <p class="mt-3">Monthly digest of whats new and exciting from us.</p>
               <div class="d-flex w-100 gap-2">
@@ -69,15 +77,15 @@ const Footer = () => {
                   Subscribe
                 </button>
               </div>
-            </form>
+            </form> */}
           </div>
         </div>
 
         <div class="d-flex justify-content-between py-4 my-4 border-top">
-          <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+          <p class={styles.copyright}>&copy; 2021 Company, Inc. All rights reserved.</p>
           <ul class="list-unstyled d-flex">
             <li class="ms-3">
-              <a class="link-dark" href="#">
+              <a class="link-dark" href="https://facebook.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
@@ -91,7 +99,7 @@ const Footer = () => {
               </a>
             </li>
             <li class="ms-3">
-              <a class="link-dark" href="#">
+              <a class="link-dark" href="https://twitter.com">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
@@ -105,7 +113,7 @@ const Footer = () => {
               </a>
             </li>
             <li class="ms-3">
-              <a class="link-dark" href="#">
+              <a class="link-dark" href="https://instagram.com/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"

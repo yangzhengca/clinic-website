@@ -12,7 +12,7 @@ function App() {
       <Home />
       <About />
       <Service />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
